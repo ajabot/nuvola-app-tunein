@@ -8,5 +8,6 @@
     "api_major": 3,
     "api_minor": 0,
     "categories": "AudioVideo;Audio;",
-    "home_url": "http://tunein.com/"
+    "home_url": "http://tunein.com/",
+    "license": "2-Clause BSD"
 }
