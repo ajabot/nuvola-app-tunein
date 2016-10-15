@@ -9,6 +9,13 @@ Support
 
 Report bugs and issues at <https://github.com/ajabot/nuvola-app-tunein/issues>.
 
+Dependencies
+------------
+
+  * GNU Make
+  * SVG optimizer: [Scour](https://github.com/codedread/scour)
+  * SVG converter: Lasem, librsvg, GraphicsMagick, ImageMagick 
+
 Installation
 ------------
 
@@ -20,9 +27,14 @@ Installation
 Copyright
 ---------
 
-  - Copyright 2015 Aurélien JABOT <nuvola@ajabot.io>
-  - License: [2-Clause BSD-license](./LICENSE)
-  File src/icon.svg
-  - Copyright 2011 Arturo Torres Sánchez <arturo.ilhuitemoc@gmail.com>
-  - Copyright 2011 Alexander King
-  - License: CC-BY-3.0
+  * Files *
+      - Copyright 2015 Aurélien JABOT <nuvola@ajabot.io>
+      - License: [2-Clause BSD-license](./LICENSE)
+  * Files src/icon*.svg
+      - Copyright 2015 Alexander King
+      - Copyright 2016 Jiří Janoušek <janousek.jiri@gmail.com>
+      - License: [2-Clause BSD-license](./LICENSE)
+  * Files *.sh 
+      - Copyright 2016 Patrick Burroughs (Celti) <celti@celti.name>
+      - Copyright 2016 Jiří Janoušek <janousek.jiri@gmail.com>
+      - License: [2-Clause BSD-license](./LICENSE)
