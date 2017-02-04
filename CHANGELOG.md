@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.3 - unreleased
+---------------------
+
+  * Ported to use Nuvola SDK.
+  
 1.2 - October 22nd, 2016
 ------------------------
 
