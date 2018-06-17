@@ -6,3 +6,9 @@ eu.tiliado.NuvolaAppTunein.desktop
 metadata.json
 nuvola-app-tunein
 tunein.tar.gz
+/screenshots/
+eu.tiliado.NuvolaAppTunein.service
+eu.tiliado.WebRuntimeAppTunein.appdata.xml
+eu.tiliado.WebRuntimeAppTunein.desktop
+eu.tiliado.WebRuntimeAppTunein.service
+nuvola-app-tunein.metainfo.xml
