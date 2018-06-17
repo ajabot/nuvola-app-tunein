@@ -1,11 +1,13 @@
 Changelog
 =========
 
+  * New maintainer: Jiří Janoušek.
+
 1.3 - February 12th, 2017
 -------------------------
 
   * Ported to use Nuvola SDK.
-  
+
 1.2 - October 22nd, 2016
 ------------------------
 

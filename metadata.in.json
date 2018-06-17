@@ -1,8 +1,8 @@
 {
   "id": "tunein",
   "name": "TuneIn",
-  "maintainer_name": "Aurélien Jabot",
-  "maintainer_link": "https://github.com/ajabot",
+  "maintainer_name": "Jiří Janoušek",
+  "maintainer_link": "https://github.com/fenryxo",
   "version_major": 1,
   "version_minor": 3,
   "api_major": 4,

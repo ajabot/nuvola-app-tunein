@@ -35,7 +35,7 @@ Copyright
 ---------
 
   * Files *
-      - Copyright 2015 Aurélien JABOT <nuvola@ajabot.io>
+      - Copyright 2018 Jiří Janoušek <janousek.jiri@gmail.com>
       - License: [2-Clause BSD-license](./LICENSE)
   * Files src/icon*.svg
       - Copyright 2015 Alexander King
