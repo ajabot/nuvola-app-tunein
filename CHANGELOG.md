@@ -1,6 +1,9 @@
 Changelog
 =========
 
+1.4 - June 30th, 2018
+---------------------
+
   * New maintainer: Jiří Janoušek.
   * Ported to Chromium-based backend for audio playback without Flash plugin.
   * Metadata parsing adapted to the new player interface.
