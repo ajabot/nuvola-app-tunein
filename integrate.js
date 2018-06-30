@@ -135,8 +135,8 @@
   WebApp._getElements = function () {
     var elms = {
       play: (
-        document.querySelector('svg[data-testId="player-status-paused"]')
-        || document.querySelector('svg[data-testId="player-status-stopped"]')),
+        document.querySelector('svg[data-testId="player-status-paused"]') ||
+        document.querySelector('svg[data-testId="player-status-stopped"]')),
       pause: document.querySelector('svg[data-testId="player-status-playing"]'),
       like: document.querySelector('#playerFavorite svg'),
       progressbar: document.querySelector('#scrubber'),
