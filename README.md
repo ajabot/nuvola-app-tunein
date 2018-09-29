@@ -1,4 +1,4 @@
-TuneIn • Nuvola Apps Runtime
+TuneIn • Nuvola Apps Runtime [![CircleCI](https://circleci.com/gh/tiliado/nuvola-app-tunein/tree/master.svg?style=svg)](https://circleci.com/gh/tiliado/nuvola-app-tunein/tree/master)
 =================================
 
 Integration of TuneIn into your linux desktop via
