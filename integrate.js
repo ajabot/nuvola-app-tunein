@@ -25,12 +25,12 @@
 'use strict';
 
 (function (Nuvola) {
-  var ACTION_FAVORITE = 'favorite'
-  var C_ = Nuvola.Translate.pgettext
-  var PlaybackState = Nuvola.PlaybackState
-  var PlayerAction = Nuvola.PlayerAction
-  var player = Nuvola.$object(Nuvola.MediaPlayer)
-  var WebApp = Nuvola.$WebApp()
+  const ACTION_FAVORITE = 'favorite'
+  const C_ = Nuvola.Translate.pgettext
+  const PlaybackState = Nuvola.PlaybackState
+  const PlayerAction = Nuvola.PlayerAction
+  const player = Nuvola.$object(Nuvola.MediaPlayer)
+  const WebApp = Nuvola.$WebApp()
 
   WebApp._onInitAppRunner = function (emitter) {
     Nuvola.WebApp._onInitAppRunner.call(this, emitter)
@@ -40,7 +40,7 @@
   WebApp._onInitWebWorker = function (emitter) {
     Nuvola.WebApp._onInitWebWorker.call(this, emitter)
 
-    var state = document.readyState
+    const state = document.readyState
     if (state === 'interactive' || state === 'complete') {
       this._onPageReady()
     } else {
@@ -55,16 +55,16 @@
   }
 
   WebApp.update = function () {
-    var elms = this._getElements()
-    var track = {
+    const elms = this._getElements()
+    const track = {
       title: null,
       artist: null,
       album: null,
       artLocation: Nuvola.queryAttribute('#playerArtwork', 'src'),
       length: this._getDuration()
     }
-    var title = Nuvola.queryText('#playerTitle')
-    var separator = title ? title.indexOf('-') : null
+    let title = Nuvola.queryText('#playerTitle')
+    const separator = title ? title.indexOf('-') : null
     if (separator > 0) {
       track.artist = title.substring(0, separator - 1).trim()
       title = title.substring(separator + 1).trim()
@@ -72,7 +72,7 @@
     track.title = title
     player.setTrack(track)
 
-    var state
+    let state
     if (elms.pause) {
       state = PlaybackState.PLAYING
     } else if (elms.play) {
@@ -101,7 +101,7 @@
   }
 
   WebApp._onActionActivated = function (emitter, name, param) {
-    var elms = this._getElements()
+    const elms = this._getElements()
     switch (name) {
       case PlayerAction.TOGGLE_PLAY:
         if (elms.play) {
@@ -117,12 +117,13 @@
       case PlayerAction.STOP:
         Nuvola.clickOnElement(elms.pause)
         break
-      case PlayerAction.SEEK:
-        var total = Nuvola.parseTimeUsec(this._getDuration())
+      case PlayerAction.SEEK: {
+        const total = Nuvola.parseTimeUsec(this._getDuration())
         if (param > 0 && param <= total) {
           Nuvola.clickOnElement(elms.progressbar.firstChild, param / total, 0.5)
         }
         break
+      }
       case PlayerAction.CHANGE_VOLUME:
         Nuvola.clickOnElement(elms.volumebar.firstChild, 0.5, 1.0 - param)
         break
@@ -133,7 +134,7 @@
   }
 
   WebApp._getElements = function () {
-    var elms = {
+    const elms = {
       play: (
         document.querySelector('svg[data-testId="player-status-paused"]') ||
         document.querySelector('svg[data-testId="player-status-stopped"]')),
@@ -143,7 +144,7 @@
       volumebar: document.querySelector('#playerVolumeSlider')
     }
     // Ignore disabled buttons
-    for (var key in elms) {
+    for (const key in elms) {
       if (elms[key] && elms[key].disabled) {
         elms[key] = null
       }
@@ -152,4 +153,4 @@
   }
 
   WebApp.start()
-})(this)  // function(Nuvola)
+})(this) // function(Nuvola)
